@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none !important;
+    text-decoration: none !important;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+}
+
+.minmenu {
+    position: relative;
+}
+
+.minmenu::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 1s;
+}
+
+.minmenu:hover::after {
+    width: 100%;
+}
+
+#active::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 1s;
+}
+
+#home {
+    position: relative;
+}
+
+.homeminmenu {
+    display: none;
+    width: 200px;
+    top: 28px;
+    left: -50px;
+    position: absolute;
+    background-color: rgb(29, 29, 29);
+}
+
+.homeminmenu li a {
+    color: #fff;
+    position: relative;
+}
+
+.homeminmenu li a:hover {
+    margin-left: 10px;
+}
+
+.homeminmenu li a:hover::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: -15px;
+    top: 12px;
+}
+
+#home:hover .homeminmenu {
+    display: block;
+}
+
+#coffee {
+    width: 100%;
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg);
+    background-position: center;
+}
+
+.btn-head {
+    padding: 20px;
+    background: transparent;
+    border: 1px solid #fff;
+    transition: 1s;
+    padding: 10px 20px;
+    width: 10rem;
+    letter-spacing: 1px;
+}
+
+.btn-head:hover {
+    background-color: rgb(190, 156, 121);
+    border: 1px solid rgb(190, 156, 121);
+}
+
+#herald {
+    background-image: url(../Image/new-new-h1-bacground-img-3.jpg);
+}
+
+.box-txt-head:hover {
+    color: rgb(190, 156, 121);
+    cursor: pointer;
+}
+
+.readmor:hover {
+    color: rgb(221, 190, 158) !important;
+}
+
+#estd-coffe {
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg);
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+}
+
+.box-num {
+    width: 98%;
+}
+
+#onlinecofe {
+    width: 100%;
+    background-image: url(../Image/new-new-h1-bacground-img-3.jpg);
+}
+
+.products-txt:hover {
+    color: rgb(190, 156, 121);
+    cursor: pointer;
+}
+
+.products {
+    position: relative;
+}
+
+.products:hover #addbtn {
+    display: block;
+    transition: 1s;
+}
+
+.products:hover .img-product {
+    opacity: 0.7;
+    transition: 1s;
+}
+
+#addbtn {
+    padding: 15px;
+    background-color: rgb(189, 155, 120);
+    border: 1px solid rgb(189, 155, 120);
+    transition: 1s;
+    position: absolute;
+    top: 10rem;
+    left: 6.5rem;
+    display: none;
+}
+
+#addbtn:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.cofee-text {
+    font-size: 5rem !important;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 368px;
+    height: 353px;
+}
+
+.box .img {
+    width: 368px;
+    height: 353px;
+}
+
+.box:hover .content {
+    display: block;
+    transition: 1s;
+    color: #fff;
+    top: 0;
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    width: 345px;
+    height: 333px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    display: none;
+}
+
+.content P:nth-child(1) {
+    font-size: 1.3rem;
+}
+
+.content P:nth-child(2):hover {
+    color: rgb(176, 149, 120);
+    cursor: pointer;
+}
+
+.img-logo:hover .show {
+    display: none;
+}
+
+.img-logo {
+    width: 253px;
+    height: 102px;
+    position: relative;
+}
+
+.hidden {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.show {
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
+
+.img-logo img {
+    width: 100%;
+}
+
+.junior-menu {
+    display: none;
+}
+
+#contactUs {
+    width: 100%;
+    background-image: url(../Image/new-new-h1-bacground-img-3.jpg);
+}
+
+.cntctus {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    background-color: rgb(176, 149, 120);
+    transition: 1s;
+    border-radius: 8px;
+}
+
+.cntctus:hover {
+    background-color: black;
+}
+
+.lorem {
+    font-size: 1.5rem;
+}
+
+#stroes {
+    background-image: url("../Image/footer-top-img-1.jpg");
+    width: 100%;
+    color: #fff;
+}
+
+.location P:hover {
+    color: rgb(176, 149, 120);
+    cursor: pointer;
+}
+
+.inp {
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+    background: transparent;
+}
+
+.inp input {
+    border: 1px solid #fff;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.latter {
+    position: absolute;
+    right: -9px;
+    top: 11px;
+    font-size: 2.3rem;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+    transition: 1s;
+}
+
+.latter:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.share i {
+    color: #fff;
+}
+
+.share i:hover {
+    color: rgb(176, 149, 120);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    #menu {
+        display: none !important;
+    }
+
+    .junior-menu {
+        display: block;
+        position: absolute;
+        z-index: 9;
+        left: 0;
+    }
+
+    #coffee {
+        height: 68rem;
+    }
+
+    .logo {
+        height: 1200px !important;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .cofee-text {
+        width: 100% !important;
+    }
+
+    .minmenuFooter {
+        flex-direction: column;
+    }
+
+    .img-box {
+        text-align: center;
+    }
+
+    .footer {
+        gap: 1rem;
+    }
+
+    #contactUs .container {
+        flex-direction: column;
+    }
+
+    .share {
+        justify-content: center !important;
+    }
+
+    .logo-coffe {
+        height: 400px !important;
+    }
+
+    .product-coffe {
+        display: flex;
+        justify-content: center;
+    }
+
+    .online-coffe {
+        text-align: center;
+    }
+}
